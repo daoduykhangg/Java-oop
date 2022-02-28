@@ -6,7 +6,10 @@ public class lab_3_3_Sort {
     public static void main(String[] args) {
         int[] intArr = new int[5];
         enterValueArray(intArr);
+        System.out.println("Input:");
+        printArray(intArr);
         intArr = sortIncrease(intArr);
+        System.out.println("Expected output: ");
         printArray(intArr);
     }
 
@@ -22,6 +25,7 @@ public class lab_3_3_Sort {
         for (int element : intArr) {
             System.out.print(element + "\t");
         }
+        System.out.println("\n");
     }
 
     public static int[] sortIncrease(int[] intArr) {
