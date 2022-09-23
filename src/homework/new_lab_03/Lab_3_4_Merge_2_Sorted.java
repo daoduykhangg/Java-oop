@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Lab_3_4_Merge_2_Sorted {
     public static void main(String[] args) {
-        int[] a = {1, 12, 16, 28, 34};
+        int[] a = {1, 12, 16, 28, 34, 66, 74};
         int[] b = {1, 13, 16, 27, 99};
         printArray(a);
         printArray(b);
@@ -40,9 +40,11 @@ public class Lab_3_4_Merge_2_Sorted {
                 mergeArr[k++] = b[j++];
             }
         }
-        if (i < a.length) {
+        while (i < a.length) {
             mergeArr[k++] = a[i++];
-        } else if (j < b.length) {
+        }
+
+        while (j < b.length) {
             mergeArr[k++] = b[j++];
         }
         return mergeArr;
